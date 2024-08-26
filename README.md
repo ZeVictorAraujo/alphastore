@@ -4,7 +4,7 @@
 
 #Linguagens Utilizadas
 - HTML (Marcação)
-- CSS (Marcação)
+- CSS (Estilo)
 - Javascript
 
 #Créditos
