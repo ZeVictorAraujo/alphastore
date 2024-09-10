@@ -1,84 +1,128 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
- 
- * {
-    margin: 0;
-    padding: 0;
-    font-family: "Merriweather", serif;
- }
-
- body{
-    background-color: #262525;
- }
-
-.fundo-img{
-    width:30%;
-    margin-top: 50px;
-    margin-left: 100px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-header {
-   background-color: #1a1a1a;
-   padding: 10px;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   position: sticky;
-   top: 0;
-}
-
-.search-container {
-   display: flex;
-   align-items: center;
-   z-index: -1
-}
-
-.search-container input[type="text"] {
-   padding: 5px;
-   border: none;
-   border-radius: 5px;
-   width: 200px;
-}
-
-.search-button {
-   background-color: #fff;
-   border: none;
-   padding: 5px 10px;
-   border-radius: 5px;
-   margin-left: 5px;
-   cursor: pointer;
-}
-
-.cart-icon {
-   display: flex;
-   align-items: center;
+body {
+   background-color: #1d1d1d;
    color: white;
 }
 
-.cart-icon span {
-   margin-left: 5px;
+/* Logo */
+.logo {
+   font-size: 36px;
+   color: red;
+   font-weight: bold;
 }
 
+.logo span {
+   font-size: 18px;
+   color: white;
+}
+
+/* Menu */
 nav {
-   width: 50%;
    background-color: #000;
-}
-
-nav ul {
-   list-style-type: none;
-   margin: 0;
    padding: 10px 0;
 }
 
-nav ul li {
-   display: inline;
-   margin: 0 20px;
+nav a {
+   color: red;
+   text-decoration: none;
+   font-weight: bold;
 }
 
-nav ul li a {
-   text-decoration: none;
+nav a:hover {
+   color: white;
+}
+
+/* Espaçamento entre menu e cupom */
+.promo {
+   background-color: black;
+   padding: 20px;
+   text-align: center;
+   margin-top: 40px;
+}
+
+.promo h2 {
    color: red;
-   font-weight: bold;
+}
+
+.promo p {
+   color: white;
+   font-size: 24px;
+}
+
+/* Search Bar */
+.search-bar {
+   position: relative; /* Para permitir a posição do ícone */
+}
+
+.search-bar input {
+   background-color: #e5e5e5;
+   border: none;
+   padding: 8px 40px 8px 15px; /* Ajustado para dar espaço ao ícone da lupa */
+   width: 300px;
+   border-radius: 25px; /* Border-radius arredondado */
+   font-size: 14px;
+}
+
+.search-bar i {
+   position: absolute;
+   right: 15px; /* Ícone à direita dentro do input */
+   top: 50%;
+   transform: translateY(-50%);
+   font-size: 18px;
+   color: #1d1d1d; /* Cor do ícone */
+}
+
+/* Cart Icon */
+.cart {
+   color: white;
+   border: 1px solid #e5e5e5;
+   padding: 5px;
+   border-radius: 10px;
+}
+
+/* Cards */
+.card-body {
+   text-align: center;
+   background-color: #000;
+}
+
+.card-body h5 {
+   color: red;
+   font-size: 24px;
+}
+
+.card-body img {
+   max-width: 100%;
+   height: auto;
+}
+
+.card-footer {
+   background-color: black;
+   color: white;
+   border-top: none;
+}
+
+.card-footer h5 {
+   font-size: 20px;
+}
+
+/* Cart Button */
+.btn-cart {
+   color: white;
+   background-color: transparent;
+   border: 1px solid #e5e5e5;
+   padding: 5px 15px;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+.btn-cart:hover {
+   background-color: #e5e5e5;
+   color: #1d1d1d;
+}
+
+.btn-cart i {
+   margin-right: 5px; /* Espaçamento entre o ícone e o texto */
 }
