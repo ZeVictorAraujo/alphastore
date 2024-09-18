@@ -1,6 +1,8 @@
 body {
-   background-color: #1d1d1d;
+   background-image: url("fundo.png");
    color: white;
+   background-repeat: no-repeat;
+   background-size: cover;
 }
 
 /* Logo */
@@ -51,7 +53,7 @@ nav a:hover {
    font-size: 24px;
 }
 
-/* Search Bar */
+/* Pesquisa */
 .search-bar {
    position: relative;
 }
